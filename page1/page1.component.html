@@ -1,0 +1,13 @@
+<mat-spinner *ngIf="!User"></mat-spinner>
+
+<mat-card class="student-card" *ngFor="let user of users">
+  <mat-card-header>
+    <mat-card-title></mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+      <img mat-card-image [src]="">
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary" [routerLink]="['/page2']">View User</button>
+  </mat-card-actions>
+</mat-card>

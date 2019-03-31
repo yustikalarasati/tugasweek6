@@ -1,0 +1,9 @@
+<mat-spinner *ngIf="!User"></mat-spinner>
+
+<mat-card class="student-card" *ngIf="User">
+  <mat-card-header>
+    Users
+    <button mat-button [matMenuTriggerFor]="menu">Add a User</button>        
+    <p *ngFor="let user of user.name"></p>
+  </mat-card-header>
+</mat-card>

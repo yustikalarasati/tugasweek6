@@ -1,0 +1,7 @@
+<mat-toolbar color="accent" class="toolbar">
+  <button mat-button [matMenuTriggerFor]="menu">HOME</button>
+  <button mat-button [matMenuTriggerFor]="menu">USERS</button>
+  <img mat-card-image [src]="pokemon.sprites.front_default" [alt]="'Photo of ' + pokemon.name">
+</mat-toolbar>
+<router-outlet></router-outlet>
+
